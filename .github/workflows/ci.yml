@@ -18,8 +18,8 @@ jobs:
       postgres:
         image: postgres
         env:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: secretpassword
+          POSTGRES_USER: developer
+          POSTGRES_PASSWORD: supersecretpassword
           POSTGRES_DB: authapi_test
 
         options: >-
@@ -46,8 +46,8 @@ jobs:
           PORT: 5000
           PGHOST: localhost
           PGPORT: 5432
-          PGUSER: postgres
-          PGPASSWORD: secretpassword
+          PGUSER: developer
+          PGPASSWORD: supersecretpassword
           PGDATABASE: authapi_test
           ACCESS_TOKEN_KEY: secret
           REFRESH_TOKEN_KEY: terces
